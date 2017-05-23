@@ -62,11 +62,11 @@ public class CommunicationThread extends Thread {
             HashMap<String, StockData> data = serverThread.getData();
             StockData stockdata = null;
             String result = "no text";
-            if (data != null && data.containsKey(stock)) {
+            if (false && data != null && data.containsKey(stock)) {
                 Log.i(Constants.TAG, "[COMMUNICATION THREAD] Getting the information from the cache...");
                 stockdata = data.get(stock);
             }
-            if (stockdata != null) {
+            if (false && stockdata != null) {
                 result = stockdata.price + stockdata.time;
             }
             else {
